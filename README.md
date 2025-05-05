@@ -1,8 +1,13 @@
+![Schematics overview](image/side_view.PNG)
+
 # Halo Vision
 
 **Open-Source Heads-Up Display for Motorcycle Safety**
 
 Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and indicator notifications to motorcyclists, hands-free. Inspired by personal experiences, it evolved from a simple indicator broadcaster into a full display system with custom PCBs and a companion mobile app.
+
+A full report—including detailed design motivations, hardware walkthrough, and CFD analysis—is available at:  
+https://www.kahuhutton.com/work/halo-vision
 
 ---
 
