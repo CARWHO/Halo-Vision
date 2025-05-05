@@ -58,15 +58,21 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
     - `diagnostics.py`  
   ![Software in action](image/full_view1.PNG)
 
-- **CAD Models & 3D Prints**  
-  See [`/cad/README.md`](cad/README.md).  
-  All in `/cad/`:
-  - **Helmet housing** (`helmet_housing.step`, `helmet_housing.stl`)  
-  - **Mount styles**:  
-    - `mount_clip.stl` (clip-on)  
-    - `mount_screw.stl` (screw-on bracket)  
-    - `mount_magnet.stl` (magnetic quick-release)  
-  - **Print Guidance** (`/cad/print_settings.md`) lists filament recommendations, print settings, and screw types  
+## CAD Models & 3D Prints
+
+All CAD assets live under the `/cad/` folder, organized by module. Each sub-folder includes a SolidWorks assembly (`.SLDASM`) plus its corresponding part files (`.SLDPRT`).  
+
+**Module folders:**  
+- `brainmodule/` – electronics housing assemblies and parts  
+- `displaymodule/` – display housing assemblies and parts  
+- `misc/` – hardware components (bolts, spacers, etc.)  
+
+**Mount options:**  
+- **HaloMount** – bracketed mount for helmet rim installation  
+- **Direct Mount** – low-profile mount for direct shell attachment  
+
+For print parameters, materials, and recommended hardware, see [`/cad/print_settings.md`](cad/print_settings.md).  
+ 
   ![CAD models and mounts](image/full_view2.PNG)
 
 - **Mobile App**  
