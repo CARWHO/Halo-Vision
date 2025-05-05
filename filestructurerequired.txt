@@ -1,0 +1,61 @@
+software/
+├── firmware/
+│   ├── brain_module/
+│   │   ├── Makefile
+│   │   ├── include/
+│   │   │   ├── config.h
+│   │   │   ├── hal/
+│   │   │   │   ├── gpio.h
+│   │   │   │   ├── uart.h
+│   │   │   │   └── i2c.h
+│   │   │   └── modules/
+│   │   │       ├── gps.h
+│   │   │       ├── ble_uart.h
+│   │   │       └── battery.h
+│   │   └── src/
+│   │       ├── main.c
+│   │       ├── hal/
+│   │       │   ├── gpio.c
+│   │       │   ├── uart.c
+│   │       │   └── i2c.c
+│   │       ├── drivers/
+│   │       │   ├── gps_driver.c
+│   │       │   ├── ble_uart.c
+│   │       │   └── battery_monitor.c
+│   │       ├── modules/
+│   │       │   ├── nav_logic.c
+│   │       │   └── signal_detector.c
+│   │       └── util/
+│   │           ├── ring_buffer.c
+│   │           └── logger.c
+│   │
+│   └── display_module/
+│       ├── Makefile
+│       ├── include/
+│       │   ├── config.h
+│       │   ├── hal/
+│       │   │   ├── gpio.h
+│       │   │   ├── spi.h
+│       │   │   └── uart.h
+│       │   └── modules/
+│       │       ├── display_driver.h
+│       │       └── ble_rx.h
+│       └── src/
+│           ├── main.c
+│           ├── hal/
+│           │   ├── gpio.c
+│           │   ├── spi.c
+│           │   └── uart.c
+│           ├── drivers/
+│           │   ├── lcd_driver.c
+│           │   └── ble_rx.c
+│           ├── modules/
+│           │   ├── screen_updater.c
+│           │   └── battery_status.c
+│           └── util/
+│               ├── ring_buffer.c
+│               └── logger.c
+│
+└── host_tools/
+    ├── flash_firmware.py
+    └── diagnostics.py
