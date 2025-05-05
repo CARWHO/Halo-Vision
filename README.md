@@ -26,7 +26,7 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
   ![Schematics overview](image/pcb.PNG)
 
 - **Software**  
-  See [`/software/README.md`](software/README.md).  
+  See [`/software/README.md`](software/software_readme.md).  
   Organized under `/software/`:
   - **firmware/**
     - **brain_module/**  
