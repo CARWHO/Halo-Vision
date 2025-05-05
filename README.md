@@ -16,12 +16,12 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
   - **Bill of Materials** (`BOM.csv`) listing every part with distributor links  
   - **Assembly drawings** showing component placement, layer stackup, and silkscreen legends  
   - ATmega32U2 pin mapping and net labels for easy modification  
-  ![Schematics overview](\image\pcb.PNG)
+  ![Schematics overview](image\pcb.PNG)
 
 - **Software**  
   See [`/software/README.md`](software/README.md).  
   Firmware, drivers, and example hosts to get your HUD talking to GPS and turn signals.  
-  ![Software in action](\image\full_view1.PNG)
+  ![Software in action](image\full_view1.PNG)
 
 - **CAD Models & 3D Prints**  
   See [`/cad/README.md`](cad/README.md).  
@@ -32,7 +32,7 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
     - `mount_screw.stl` (screw-on bracket)  
     - `mount_magnet.stl` (magnetic quick-release)  
   - **Print Guidance** (`/cad/print_settings.md`) lists filament recommendations, print settings, and screw types  
-  ![CAD models and mounts](\image\full_view2.PNG)
+  ![CAD models and mounts](image\full_view2.PNG)
 
 - **Mobile App**  
   See [`/app/README.md`](app/README.md).  
@@ -42,7 +42,7 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
   - **Requirements**: Android 13+, Mapbox GL SDK, Bluetooth LE permissions  
   - **Build & Install**: import into Android Studio, configure Mapbox token, compile APK  
   - **Pairing**: select device `“HaloVisionHUD”`, default PIN `1234`  
-  ![Mobile App](\image\mobile_app.PNG)
+  ![Mobile App](image\mobile_app.PNG)
 
 
 ---
