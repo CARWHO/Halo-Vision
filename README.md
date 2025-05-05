@@ -9,7 +9,7 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
 ## 🚀 What’s in this Repo
 
 - **Schematics**    
-  See [`/schematics/README.md`](schematics/README.md).  
+  See [`/schematics/README.md`](schematics\schematics_readme.md).  
   Organized by module under `/schematics/`:
   - **Brain Module** and **Display Module** each have a `Project Outputs/` folder containing:  
     - **3D Views**  
@@ -85,15 +85,57 @@ For print parameters, materials, and recommended hardware, see [`/cad/print_sett
 
 ## 🏁 Getting Started
 
-1. **Clone** this repo  
-   ```bash
-   git clone https://github.com/YourUsername/HaloVision.git
-Browse each subfolder’s README for step-by-step build & install instructions.
+Follow these steps to take your Halo Vision from GitHub to helmet-mounted HUD:
 
-Flash the firmware, 3D-print your chosen mount, and pair your phone.
+### 1. Clone this repo
+```bash
+git clone https://github.com/YourUsername/HaloVision.git
+cd HaloVision
+```
 
-🤝 Contributing
-This project is 100% open-source. Contributions, issues, and pull requests are warmly welcomed!
+### 2. Order PCBs
+- Open `/schematics/brain_module/Project Outputs/BOM (JLCPCB)/BOM.csv` and `/schematics/display_module/Project Outputs/BOM (JLCPCB)/BOM.csv`
+- Upload both CSVs to JLCPCB (or your favorite board house) to fabricate the Brain and Display modules
+
+### 3. 3D-print mounts & housings
+- Choose a mount style (HaloMount, Direct Mount, etc.) in `/cad/`
+- Follow `/cad/print_settings.md` for filament type, layer height, infill, and recommended screws
+
+### 4. Build & flash firmware
+
+**Brain Module:**
+```bash
+cd software/firmware/brain_module
+make all
+make flash
+```
+
+**Display Module:**
+```bash
+cd ../../display_module
+make all
+make flash
+```
+
+### 5. Install the mobile app
+```bash
+git clone https://github.com/1ceseismic/android_mapbox_lcd_navigator.git
+```
+Import into Android Studio, configure your Mapbox token, then build & install the APK on your device.
+
+### 6. Assemble & power up
+- Populate each PCB with the ordered components and solder per the assembly drawings
+- Mount the PCBs in your 3D-printed housings and secure with the recommended screws
+- Connect a Li-Po battery to each module's power header
+
+### 7. Pair & test
+- On your phone, open the installed app and pair to the HaloVisionHUD (PIN: 1234)
+- Turn on the Brain Module (bike) and Display Module (helmet)
+- Verify GPS lock, turn-signal detection, and live HUD updates before your next ride
+
+---
+
+Now you're ready to ride with Halo Vision. Enjoy hands-free navigation and stay safe!
 
 📄 License
 Distributed under the MIT License. See LICENSE for details.
