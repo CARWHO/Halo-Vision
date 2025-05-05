@@ -9,7 +9,7 @@ Halo Vision is a helmet-mounted HUD that delivers turn-by-turn navigation and in
 ## 🚀 What’s in this Repo
 
 - **Schematics**    
-  See [`/schematics/README.md`](schematics\schematics_readme.md).  
+  See [`/schematics/README.md`](schematics/schematics_readme.md).  
   Organized by module under `/schematics/`:
   - **Brain Module** and **Display Module** each have a `Project Outputs/` folder containing:  
     - **3D Views**  
