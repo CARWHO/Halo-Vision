@@ -88,7 +88,7 @@ For print parameters, materials, and recommended hardware, see [`/cad/print_sett
 
 ---
 
-  ![Schematics overview](image/halovision.PNG)
+  ![Halo Vision Demo](image/halovision.png)
 ## 🏁 Getting Started
 
 Follow these steps to take your Halo Vision from GitHub to helmet-mounted HUD:
